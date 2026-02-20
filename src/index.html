@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script defer src="script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COIS 3060 Assignment 1</title>
+    <title>MSR Research Reference Guide</title>
   </head>
   <body>
+    <header>
+      <h1>MSR Knowledge Base</h1>
+      <p>A reference guide for Software Engineering PhD students.</p>
+    </header>
+
     <nav>
       <ul id="navList">
         <li><a class="comforta" href="#data-sources">Data Sources</a></li>
@@ -15,32 +20,232 @@
           <a class="comforta" href="#collection-methods">Collection Methods</a>
         </li>
         <li>
-          <a class="comforta" href="analysis-methods">Analysis Methods</a>
+          <a class="comforta" href="#analysis-methods">Analysis Methods</a>
         </li>
         <li>
-          <a class="comforta" href="publication-methods">Publication Venues</a>
+          <a class="comforta" href="#publication-venues">Publication Venues</a>
         </li>
       </ul>
     </nav>
 
-    <section id="data-sources">
-      <h2>Data Sources</h2>
-      <div></div>
-    </section>
+    <main>
+      <section id="data-sources">
+        <h2>Data Sources</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Source Name</th>
+              <th>Data Provided</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GitHub</td>
+              <td>Repositories, commits, PRs, issues, stars</td>
+              <td>
+                Primary platform for Git-based version control and
+                collaboration.
+              </td>
+            </tr>
+            <tr>
+              <td>Stack Overflow</td>
+              <td>Questions, answers, tags, user reputation</td>
+              <td>Q&A site for professional and enthusiast programmers.</td>
+            </tr>
+            <tr>
+              <td>JIRA</td>
+              <td>Issue tracking, sprint data, bug reports</td>
+              <td>
+                Proprietary issue tracking product used for agile project
+                management.
+              </td>
+            </tr>
+            <tr>
+              <td>App Stores</td>
+              <td>Reviews, ratings, downloads</td>
+              <td>
+                Google Play and Apple App Store user feedback and metrics.
+              </td>
+            </tr>
+            <tr>
+              <td>Travis CI / Jenkins</td>
+              <td>Build logs, test results, deployment data</td>
+              <td>
+                Continuous Integration tools providing software quality metrics.
+              </td>
+            </tr>
+            <tr>
+              <td>Mailing Lists</td>
+              <td>Developer discussions, archives</td>
+              <td>
+                Historical records of developer communication and
+                decision-making.
+              </td>
+            </tr>
+            <tr>
+              <td>npm Registry</td>
+              <td>Package dependencies, downloads, versions</td>
+              <td>
+                The world's largest software registry for JavaScript packages.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section id="collection-methods">
-      <h2>Collection Methods</h2>
-      <div></div>
-    </section>
+      <section id="collection-methods">
+        <h2>Collection Methods</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Method Name</th>
+              <th>Use Case</th>
+              <th>Pros</th>
+              <th>Cons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>REST APIs</td>
+              <td>Structured queries for GitHub/Stack Overflow</td>
+              <td>Official support, structured data</td>
+              <td>Rate limits, may require authentication</td>
+            </tr>
+            <tr>
+              <td>GraphQL</td>
+              <td>Flexible, efficient data fetching</td>
+              <td>Fetch only what you need, fewer requests</td>
+              <td>Higher learning curve than REST</td>
+            </tr>
+            <tr>
+              <td>Web Scraping (Selenium)</td>
+              <td>Dynamic content, sites without APIs</td>
+              <td>Handles JavaScript, mimics user behavior</td>
+              <td>Slow, resource-heavy</td>
+            </tr>
+            <tr>
+              <td>Web Scraping (BeautifulSoup)</td>
+              <td>Static HTML parsing</td>
+              <td>Lightweight, fast</td>
+              <td>Cannot handle dynamic JavaScript content</td>
+            </tr>
+            <tr>
+              <td>Database Dumps</td>
+              <td>Large-scale historical data (GHTorrent)</td>
+              <td>Pre-collected, massive datasets</td>
+              <td>May be outdated, requires large storage</td>
+            </tr>
+            <tr>
+              <td>Manual Download</td>
+              <td>One-time data collection (CSV)</td>
+              <td>Simple, no coding required</td>
+              <td>Not scalable, prone to human error</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section id="analysis-methods">
-      <h2>Analysis Methods</h2>
-      <div></div>
-    </section>
+      <section id="analysis-methods">
+        <h2>Analysis Methods</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Method Name</th>
+              <th>Type of Analysis</th>
+              <th>Common Use Cases</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Statistical Analysis</td>
+              <td>Quantitative</td>
+              <td>Descriptive stats, hypothesis testing, correlation</td>
+            </tr>
+            <tr>
+              <td>Regression Analysis</td>
+              <td>Quantitative / Predictive</td>
+              <td>Linear/logistic regression, prediction models</td>
+            </tr>
+            <tr>
+              <td>Thematic Analysis</td>
+              <td>Qualitative</td>
+              <td>Qualitative coding, theme identification</td>
+            </tr>
+            <tr>
+              <td>Grounded Theory</td>
+              <td>Qualitative</td>
+              <td>Systematic qualitative analysis and theory building</td>
+            </tr>
+            <tr>
+              <td>Machine Learning</td>
+              <td>Computational</td>
+              <td>Classification, clustering, neural networks</td>
+            </tr>
+            <tr>
+              <td>Time Series Analysis</td>
+              <td>Statistical</td>
+              <td>Trend analysis, seasonality, forecasting</td>
+            </tr>
+            <tr>
+              <td>Network Analysis</td>
+              <td>Relational</td>
+              <td>Developer collaboration, dependency graphs</td>
+            </tr>
+            <tr>
+              <td>Visualization</td>
+              <td>Exploratory</td>
+              <td>Plots, heatmaps, dashboards</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section id="publication-venues">
-      <h2>Publication Venues</h2>
-      <div></div>
-    </section>
+      <section id="publication-venues">
+        <h2>Publication Venues</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Venue (Abbr.)</th>
+              <th>Type</th>
+              <th>Focus Area</th>
+              <th>MSR Relevance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ICSE</td>
+              <td>Conference</td>
+              <td>Software Engineering</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>FSE</td>
+              <td>Conference</td>
+              <td>Foundations of SE</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>MSR</td>
+              <td>Conference</td>
+              <td>Mining Software Repositories</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>EMSE</td>
+              <td>Journal</td>
+              <td>Empirical Software Engineering</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>TSE</td>
+              <td>Journal</td>
+              <td>Transactions on SE</td>
+              <td>Medium</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
   </body>
 </html>
