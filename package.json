@@ -1,0 +1,22 @@
+{
+  "name": "cois3060_assignment2",
+  "version": "1.0.0",
+  "description": "MSR Research Reference Guide - Automated Testing",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronvoncriegern/COIS3060_Assignment2.git"
+  },
+  "author": "Cameron Von Criegern",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
